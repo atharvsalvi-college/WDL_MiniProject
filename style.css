@@ -1,0 +1,470 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6e3;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    color: #b22222;
+}
+
+a {
+    color: #003366;
+}
+
+a:hover {
+    color: #b22222;
+}
+
+.container,
+main {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 25px 30px 50px;
+    box-sizing: border-box;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #cc6600;
+    margin: 0 0 25px;
+}
+
+header {
+    background: linear-gradient(135deg, #003366, #07558f);
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    border: none;
+    border-bottom: 4px solid #cc6600;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.Home-Page_title {
+    color: #ffcc66 !important;
+    font-size: 42px;
+    margin: 10px 0 5px;
+}
+
+header p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.monitoring-year {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-left: 6px solid #cc6600;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #cc6600;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 6px;
+    transition: 0.25s ease;
+}
+
+.btn:hover {
+    background-color: #b22222;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    color: #003366;
+    border: 2px solid #003366;
+}
+
+.btn-outline:hover {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.top-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 25px;
+}
+
+.top-links li {
+    margin: 0;
+}
+
+.top-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+.top-links a:hover {
+    background-color: #cc6600;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+.alert {
+    margin: 20px 0;
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 18px 22px;
+    border-left: 5px solid #003366;
+    border-radius: 6px;
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.subscribe-btn {
+    margin-bottom: 15px;
+}
+
+.card-grid {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    min-height: 150px;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-top: 5px solid #b22222;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-top-color: #cc6600;
+}
+
+.stat-value {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #b52222;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 18px;
+    color: #333333;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.list-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.list-card li {
+    padding: 6px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.list-card li:hover {
+    background-color: #ffe0b3;
+}
+
+.gallery {
+    margin: 15px 0;
+}
+
+.gallery figure {
+    display: inline-block;
+    width: 180px;
+    margin: 5px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    transition: 0.25s ease;
+}
+
+.gallery img:hover {
+    border-color: #cc6600;
+    transform: scale(1.03);
+}
+
+.gallery figcaption {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+table.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+}
+
+table.data-table caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+table.data-table th,
+table.data-table td {
+    border: 1px solid #999999;
+    padding: 8px;
+    text-align: center;
+}
+
+table.data-table thead th {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+table.data-table tbody tr:nth-child(even) {
+    background-color: #f2e2c4;
+}
+
+table.data-table tbody tr:hover {
+    background-color: #ffe0b3;
+}
+
+table.data-table tfoot td {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.subscribe-form fieldset {
+    border: 1px solid #999999;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.subscribe-form legend {
+    font-weight: bold;
+    color: #b22222;
+}
+
+.subscribe-form label {
+    display: block;
+    margin: 8px 0 3px;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"],
+.subscribe-form input[type="tel"],
+.subscribe-form select {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.subscribe-form input:focus,
+.subscribe-form select:focus {
+    border-color: #cc6600;
+    outline: none;
+    box-shadow: 0 0 4px rgba(204, 102, 0, 0.3);
+}
+
+.subscribe-form .radio-group label,
+.subscribe-form .checkbox-group label {
+    display: inline;
+    margin-right: 10px;
+}
+
+.subscribe-form button {
+    padding: 8px 20px;
+    margin: 10px 8px 0 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.subscribe-form button[type="submit"] {
+    background-color: #cc6600;
+    color: #ffffff;
+}
+
+.subscribe-form button[type="submit"]:hover {
+    background-color: #b22222;
+}
+
+.subscribe-form button[type="reset"] {
+    background-color: #dddddd;
+    color: #333333;
+}
+
+.subscribe-form button[type="reset"]:hover {
+    background-color: #bbbbbb;
+}
+
+.page-layout {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 10px 20px 30px;
+    overflow: auto;
+}
+
+.page-layout .sidebar {
+    float: left;
+    width: 25%;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.page-layout .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.page-layout .sidebar li {
+    margin-bottom: 6px;
+}
+
+.page-layout .content {
+    float: right;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.brand-bar {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.brand-bar img {
+    vertical-align: middle;
+}
+
+.brand-bar span {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.offer-box {
+    background-color: #b22222;
+    color: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    border: 3px solid #cc6600;
+    border-radius: 6px;
+}
+
+footer,
+.site-footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #cc6600;
+}
+
+.site-footer a {
+    color: #ffcc66;
+}
+
+@media (max-width: 800px) {
+    .card-grid {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+
+    .Home-Page_title {
+        font-size: 32px;
+    }
+
+    .top-links {
+        flex-direction: column;
+    }
+
+    .top-links a {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 600px) {
+    .container,
+    main {
+        width: 95%;
+        padding: 20px 15px 40px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    .Home-Page_title {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}

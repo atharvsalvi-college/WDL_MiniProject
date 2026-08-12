@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatwave Advisory Subscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main class="container">
+
+<h1>Heatwave Advisory Subscription</h1>
+<hr>
+<p>Subscribe to receive official heatwave alerts and forecasts.</p>
+
+<form class="subscribe-form">
+
+<fieldset>
+    <legend>Your Details</legend>
+
+    <label for="name">Citizen Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="mobile">Mobile Number</label>
+    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+    <label for="region">Select Region</label>
+    <select id="region" name="region">
+        <option>Ahmedabad</option>
+        <option>Surat</option>
+        <option>Vadodara</option>
+        <option>Rajkot</option>
+        <option>Mumbai</option>
+        <option>Pune</option>
+        <option>Nashik</option>
+        <option>Satara</option>
+        <option>Solapur</option>
+        <option>Dhule</option>
+        <option>Jalgaon</option>
+    </select>
+</fieldset>
+
+<fieldset>
+    <legend>Preferences</legend>
+
+    <div class="radio-group">
+        <label>Preferred Alert Language</label><br>
+        <input type="radio" id="english" name="language" value="English">
+        <label for="english">English</label>
+
+        <input type="radio" id="hindi" name="language" value="Hindi">
+        <label for="hindi">Hindi</label>
+
+        <input type="radio" id="marathi" name="language" value="Marathi">
+        <label for="marathi">Marathi</label>
+    </div>
+
+    <div class="checkbox-group" style="margin-top:14px;">
+        <label>Alert Types to Receive</label><br>
+        <input type="checkbox" id="forecast">
+        <label for="forecast">Daily Forecast</label>
+
+        <input type="checkbox" id="warning">
+        <label for="warning">Heatwave Warning</label>
+
+        <input type="checkbox" id="emergency">
+        <label for="emergency">Emergency Alerts</label>
+
+        <input type="checkbox" id="newsletter">
+        <label for="newsletter">Monthly Weather Newsletter</label>
+    </div>
+</fieldset>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+<br>
+<center>
+<a href="Navigation_page_task5.html">⬅ Back to Navigation</a>
+</center>
+
+</main>
+
+<footer class="site-footer">
+    <p>Heatwave Intelligence System &nbsp;|&nbsp; &copy; 2026 IMD Data Network</p>
+</footer>
+</body>
+</html>
