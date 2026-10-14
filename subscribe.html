@@ -15,6 +15,7 @@
 <p>Subscribe to receive official heatwave alerts and forecasts.</p>
 
 <form class="subscribe-form">
+<p class="local-note">Demo mode: your contact details are not sent or saved. Only region, language, and alert choices are stored in this browser for this device.</p>
 
 <fieldset>
     <legend>Your Details</legend>
@@ -30,18 +31,7 @@
 
     <label for="region">Select Region</label>
     <select id="region" name="region">
-        <option>Ahmedabad</option>
-        <option>Surat</option>
-        <option>Vadodara</option>
-        <option>Rajkot</option>
-        <option>Mumbai</option>
-        <option>Pune</option>
-        <option>Nashik</option>
-        <option>Satara</option>
-        <option>Solapur</option>
-        <option>Dhule</option>
-        <option>Jalgaon</option>
-    </select>
+        <option>Ahmedabad</option><option>Surat</option><option>Vadodara</option><option>Rajkot</option><option>Jamnagar</option><option>Junagadh</option><option>Amreli</option><option>Daman</option><option>Mumbai</option><option>Vasai Virar</option><option>Pimpri Chinchwad</option><option>Kalyan</option><option>Pune</option><option>Satara</option><option>Solapur</option><option>Ahilyanagar</option><option>Nashik</option><option>Aurangabad</option><option>Sambhaji Nagar</option><option>Dhule</option><option>Jalgaon</option><option>Akola</option><option>Bhopal</option><option>Indore</option>    </select>
 </fieldset>
 
 <fieldset>
@@ -61,16 +51,16 @@
 
     <div class="checkbox-group" style="margin-top:14px;">
         <label>Alert Types to Receive</label><br>
-        <input type="checkbox" id="forecast">
+        <input type="checkbox" id="forecast" name="alerts" value="forecast">
         <label for="forecast">Daily Forecast</label>
 
-        <input type="checkbox" id="warning">
+        <input type="checkbox" id="warning" name="alerts" value="warning">
         <label for="warning">Heatwave Warning</label>
 
-        <input type="checkbox" id="emergency">
+        <input type="checkbox" id="emergency" name="alerts" value="emergency">
         <label for="emergency">Emergency Alerts</label>
 
-        <input type="checkbox" id="newsletter">
+        <input type="checkbox" id="newsletter" name="alerts" value="newsletter">
         <label for="newsletter">Monthly Weather Newsletter</label>
     </div>
 </fieldset>
@@ -90,5 +80,6 @@
 <footer class="site-footer">
     <p>Heatwave Intelligence System &nbsp;|&nbsp; &copy; 2026 IMD Data Network</p>
 </footer>
+    <script src="script.js"></script>
 </body>
 </html>
